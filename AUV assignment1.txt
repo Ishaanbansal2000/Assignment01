@@ -1,0 +1,14 @@
+
+  void setup()
+{
+  Serial.begin(9600) ;
+  } ;
+
+void loop()
+{
+  
+int value = analogRead(A0);
+  double decimalValue = (double)value*5/1023 ;
+  Serial.println(decimalValue) ;
+ delay(1000) ;
+}
